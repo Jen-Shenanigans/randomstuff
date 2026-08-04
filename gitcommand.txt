@@ -1,0 +1,22 @@
+Initialize: git init 
+
+Configure:  git cofig --global user.name
+            git config --global user.email
+
+Check status: git status
+
+Track changes made: git add [filenames]
+
+Commit change: git commit -m "[message]"
+
+Main branch: git branch -M main 
+
+Manage the connection between local adn remote repository hosted on the Internet: git remote add origin [url] 
+
+Push (upload from local to remote repository): git push origin main
+
+Restore: git restore [filenames]
+
+Clone: git clone [url]
+
+Renaming: git mv [oldfile] [newfile]
