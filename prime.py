@@ -1,5 +1,5 @@
 #import time
-import numpy as np 
+ 
 def is_prime(n):
     """
     Deterministic Miller-Rabin primality test, exact for all n < 3,317,044,064,679,887,385,961,981
@@ -55,7 +55,7 @@ if __name__ == "__main__":
 
 #    start_time = time.perf_counter()
 
-    primes = [n for n in range(1, 100000) if is_prime(n)]
+    primes = [n for n in range(1, 1000) if is_prime(n)]
 
     with open("primenumber2.txt", "w") as f:
         for n in primes:
