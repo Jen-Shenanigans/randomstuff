@@ -1,0 +1,11 @@
+Go to the terminal and enter:
+yt-dlp -f "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]" [url]
+
+Example:
+yt-dlp -f "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]" http://youtube.com/watch?v=yLaazttHRss
+
+Playlist download:
+yt-dlp -f "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]" --merge-output-format mp4 -o "%(playlist_title)s/%(playlist_index)02d - %(title)s.%(ext)s" "[url]"
+
+Example:
+yt-dlp -f "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]" --merge-output-format mp4 -o "%(playlist_title)s/%(playlist_index)02d - %(title)s.%(ext)s" "[https://www.youtube.com/watch?v=ORcRpScJfEg&list=PLMz5ytcUjVDanej1izm6fsqvMitJMkHFx]"
